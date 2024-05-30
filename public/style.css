@@ -1,0 +1,20 @@
+a {
+    color : black;
+    text-decoration: none;
+}
+
+
+body{
+    background-image: url('pink_flower_petals_in_white_aesthetic_background_hd_white_aesthetic.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    margin:0
+}
+
+button{
+    cursor:pointer,
+}
+
+button:hover {
+    background-color: #090909; /* Darker green on hover */
+}
