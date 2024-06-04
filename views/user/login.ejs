@@ -1,4 +1,4 @@
-<%- include('partials/header') -%>
+<%- include('../partials/header') -%>
 
 
 <div class="container mt-5">
@@ -11,17 +11,17 @@
     <% if (message) { %>
         <div class="alert alert-danger"><%= message %></div>
     <% } %>
-    <form action="/login" method="post">
+    <form action="/user/login" method="post">
         <div>
             <input class="form-input mb-3 rounded-pill pt-2 elongated-button" style="width:250" type="email" placeholder="E-mail:" name="email" required >
             <br>
             <input class="form-input mb-3 rounded-pill pt-2" style="width:250" type="password" placeholder="Password:" name="password" required>
-            <br><button type="button" class="btn btn-dark rounded-pill elongated-button mb-2">Login</button>
+            <br><button type="submit" class="btn btn-dark rounded-pill elongated-button mb-2">Login</button>
             <br>
             <input type="checkbox"><span class="text-body-secondary">Remember Me</span>
             <a href="#" > Fogot Password</a>
             <p class="fs-6 text text-body-secondary mt-2 text-left"> New User ?              
-                <button type="submit" class="btn btn-outline-dark rounded-pill"><a href="/signUp">Register</a></button>
+                <button type="submit" class="btn btn-outline-dark rounded-pill"><a href="/user/signUp">Register</a></button>
             </p>
         
         </div>
@@ -30,5 +30,8 @@
 </div>
 </div>
 
-<%- include('partials/footer')-%>
+<script>
+        
+</script>
+<%- include('../partials/footer')-%>
         

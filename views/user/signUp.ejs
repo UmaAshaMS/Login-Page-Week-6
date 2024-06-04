@@ -1,7 +1,6 @@
 
 
-<%- include('partials/header') -%>
-
+<%- include('../partials/header') -%>
 <div class="container mt-5">
     <div class="row justify-content-center">
     <div class="col-md-4 border text-center p-4">
@@ -15,7 +14,7 @@
         <div class="alert alert-danger"><%= message %></div>
     <% } %>
 
-    <form action="/signUp" method="post">
+    <form action="/user/signUp" method="post">
         <div>
     
             <input class="form-input mb-3 rounded-pill pt-2 elongated-button" style="width:250" type="text" placeholder="First Name:" name="fname" >
@@ -29,7 +28,7 @@
             <input type="checkbox" required><span class="text-body-secondary">Accept Terms and Conditions</span>
             <br><button type="submit" class="btn btn-dark rounded-pill elongated-button mb-2">Sign-Up</button>
             <br>
-            <span>Already registered ? <a href="/" style="text-decoration: underline">Sign-in</a></span>
+            <span>Already registered ? <a href="/user/login" style="text-decoration: underline">Sign-in</a></span>
             
         </div>
     </form>
@@ -37,4 +36,4 @@
 </div>
 </div>
 
-<%- include('partials/footer')-%>
+<%- include('../partials/footer')-%>

@@ -1,0 +1,29 @@
+<%- include('../partials/header') -%>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+    <div class="col-md-4 border text-center p-4">
+        <div>
+        <span class="text-secondary">You are an admin</span>
+        <h3>Login your Admin Account</h2>
+    </div>
+    
+    <form action="/admin/login" method="post">
+        <div>
+            <input class="form-input mb-3 rounded-pill pt-2 elongated-button" style="width:250" type="email" placeholder="E-mail:" name="email" required >
+            <br>
+            <input class="form-input mb-3 rounded-pill pt-2" style="width:250" type="password" placeholder="Password:" name="password" required>
+            <br><button type="submit" class="btn btn-dark rounded-pill elongated-button mb-2">Admin Login</button>
+            <br>
+        
+        </div>
+    </form>
+</div>
+</div>
+</div>
+
+<script>
+        
+</script>
+<%- include('../partials/footer')-%>
