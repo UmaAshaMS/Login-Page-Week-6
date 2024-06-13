@@ -36,7 +36,7 @@ admin.get('/console', async (req, res) => {
     try {
         // Fetch user data from MongoDB
         const users = await User.find({});
-        console.log(users)
+        
 
         // Render admin page template and pass user data
         res.render('console', { title: 'Admin Page', users: users });
